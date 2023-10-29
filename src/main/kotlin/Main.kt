@@ -1,7 +1,14 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import oops.Box
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+
+    val box1 = Box()
+
+    println("Height :${box1.height}")
+    println("length :${box1.length}")
+    println("width :${box1.width}")
+
+    box1.open()
+    box1.fillContents()
+    box1.close()
 }
