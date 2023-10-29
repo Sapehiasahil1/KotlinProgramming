@@ -11,4 +11,9 @@ fun main() {
     box1.open()
     box1.fillContents()
     box1.close()
+
+    println("volume : ${box1.volume}")
+
+    box1.boxName = "My Box"
+    println("Box Name is : ${box1.boxName}")
 }
