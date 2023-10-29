@@ -31,4 +31,18 @@ class Box {
                 field = value
             }
         }
+
+    /*
+    Visibility Modifiers :->
+    1. public: Default, can be accessed everywhere
+    2. internal: Available everywhere in the same module
+    3. private : Available only inside the containing file or class.
+    4. protected: Same as private but available inside subclasses or child classes
+
+    **** **** ****
+    For getters the visibility will depend upon the parent.
+    For setters the visibility can be modified depending upon the requirement.
+    */
+
+
 }
