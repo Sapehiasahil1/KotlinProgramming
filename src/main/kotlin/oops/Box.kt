@@ -1,10 +1,19 @@
 package oops
 
-class Box {
+// Primary Constructor
+class Box constructor( // We can omit the constructor if we don't have any visibility modifier.
+    val length: Int= 0,
+    val width: Int= 0 ,
+    val height: Int= 0
+){
 
-    val length: Int =10
-    val width: Int = 20
-    val height: Int = 5
+    init {
+        println("Init block is called")
+    }
+
+    constructor() : this(0,0,0){
+        println("Secondary constructor is called")
+    }
 
     fun fillContents(){
         println("Box Filled")
