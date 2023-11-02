@@ -1,6 +1,7 @@
 import oops.BaseCoffeeMachine
 import oops.Box
 import oops.PremiumCoffeeMachine
+import oops.PremiumCoffeeMachine2
 
 fun main() {
 
@@ -23,6 +24,13 @@ fun main() {
 //    val coffeeMachine = BaseCoffeeMachine(1000.0, "BLACK")
 //    coffeeMachine.makeCoffee()
 
-    val coffeeMachine = PremiumCoffeeMachine(5000.0,"BROWN")
-    coffeeMachine.makeCoffee()
+//    val coffeeMachine = PremiumCoffeeMachine(5000.0,"BROWN")
+//    coffeeMachine.makeCoffee()
+
+    val coffeeMachine = PremiumCoffeeMachine2(5900.0, "BROWN")
+    val info = coffeeMachine.machineInfo()
+    val coffee = coffeeMachine.makeCoffee("CAPPUCCINO")
+    println(coffee)
+    println(info)
+
 }
