@@ -1,7 +1,4 @@
-import oops.BaseCoffeeMachine
-import oops.Box
-import oops.PremiumCoffeeMachine
-import oops.PremiumCoffeeMachine2
+import oops.AbstractClass.PremiumCoffeeMachine2
 
 fun main() {
 

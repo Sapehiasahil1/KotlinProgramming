@@ -1,4 +1,6 @@
-package oops
+package oops.Inheritance
+
+import oops.Inheritance.BaseCoffeeMachine
 
 class PremiumCoffeeMachine(
     private val price: Double,

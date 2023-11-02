@@ -1,4 +1,4 @@
-package oops
+package oops.AbstractClass
 
 /*
      We can have both abstract and non-abstract functions and variables inside the abstract class.

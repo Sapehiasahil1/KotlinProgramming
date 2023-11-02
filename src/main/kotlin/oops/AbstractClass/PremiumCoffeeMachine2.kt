@@ -1,4 +1,6 @@
-package oops
+package oops.AbstractClass
+
+import oops.AbstractClass.BaseCoffeeMachine2
 
 /*
     Always remember that whenever we derive the abstract class, we need to either make the child class

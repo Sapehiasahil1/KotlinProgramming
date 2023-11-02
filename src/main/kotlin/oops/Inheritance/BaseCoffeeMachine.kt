@@ -1,4 +1,4 @@
-package oops
+package oops.Inheritance
 
 /*
 By default, classes in kotlin are final, which means that they cannot be inherited by the subclasses.
