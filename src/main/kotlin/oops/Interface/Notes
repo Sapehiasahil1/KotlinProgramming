@@ -1,0 +1,5 @@
+Interface don't  have constructors as well as init blocks.
+
+-> The interfaces are used because KOTLIN does not support MULTIPLE INHERITANCE (same as JAVA)
+-> In interfaces by default all the functions, variables are abstract unless they have the body or the values resp.,
+so we need not to mention them.
