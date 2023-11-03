@@ -2,6 +2,8 @@ import oops.AbstractClass.PremiumCoffeeMachine2
 import oops.Interface.Audio
 import oops.Interface.Downloader
 import oops.Interface.Video
+import oops.ObjectExpression.App
+import oops.ObjectExpression.DownloadListener
 
 fun main() {
 
@@ -48,5 +50,23 @@ fun main() {
 //    videoDownloader.play()
 //    videoDownloader.playerInfo()
 
+//    Object Expression
+
+//    val app = App()
+    val downloader = oops.ObjectExpression.Downloader()
+    downloader.downloadListener = object : DownloadListener{
+        override fun downloadStarted() {
+            println("Download Started")
+        }
+
+        override fun onDownloadCompleted(file: String) {
+            println("$file download completed")
+        }
+
+        override fun onProgressUpdate(progress: Int) {
+            println("$progress% downloaded")
+        }
+    }
+    downloader.downloadFile("FileA.png")
 
 }
