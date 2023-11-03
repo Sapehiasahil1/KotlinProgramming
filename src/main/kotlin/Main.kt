@@ -1,4 +1,7 @@
 import oops.AbstractClass.PremiumCoffeeMachine2
+import oops.Delegation.FileDownloader
+import oops.Delegation.FilePlayer
+import oops.Delegation.MediaFile
 import oops.Interface.Audio
 import oops.Interface.Downloader
 import oops.Interface.Video
@@ -53,20 +56,25 @@ fun main() {
 //    Object Expression
 
 //    val app = App()
-    val downloader = oops.ObjectExpression.Downloader()
-    downloader.downloadListener = object : DownloadListener{
-        override fun downloadStarted() {
-            println("Download Started")
-        }
+//    val downloader = oops.ObjectExpression.Downloader()
+//    downloader.downloadListener = object : DownloadListener{
+//        override fun downloadStarted() {
+//            println("Download Started")
+//        }
+//
+//        override fun onDownloadCompleted(file: String) {
+//            println("$file download completed")
+//        }
+//
+//        override fun onProgressUpdate(progress: Int) {
+//            println("$progress% downloaded")
+//        }
+//    }
+//    downloader.downloadFile("FileA.png")
 
-        override fun onDownloadCompleted(file: String) {
-            println("$file download completed")
-        }
-
-        override fun onProgressUpdate(progress: Int) {
-            println("$progress% downloaded")
-        }
-    }
-    downloader.downloadFile("FileA.png")
-
+//    Delegation
+    val file: String = "abc.png"
+    val mediaFile= MediaFile(FileDownloader(file), FilePlayer(file))
+    mediaFile.download()
+    mediaFile.play()
 }
