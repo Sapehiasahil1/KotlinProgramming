@@ -1,13 +1,3 @@
-import oops.AbstractClass.PremiumCoffeeMachine2
-import oops.Delegation.FileDownloader
-import oops.Delegation.FilePlayer
-import oops.Delegation.MediaFile
-import oops.Interface.Audio
-import oops.Interface.Downloader
-import oops.Interface.Video
-import oops.ObjectExpression.App
-import oops.ObjectExpression.DownloadListener
-
 fun main() {
 
 //    Basics of Class
@@ -73,8 +63,16 @@ fun main() {
 //    downloader.downloadFile("FileA.png")
 
 //    Delegation
-    val file: String = "abc.png"
-    val mediaFile= MediaFile(FileDownloader(file), FilePlayer(file))
-    mediaFile.download()
-    mediaFile.play()
+
+//    val file: String = "abc.png"
+//    val mediaFile= MediaFile(FileDownloader(file), FilePlayer(file))
+//    mediaFile.download()
+//    mediaFile.play()
+
+//    Property Delegation
+
+//    val student = Student()
+//    student.firstName = "befsdfs"
+//    student.lastName = "fsafsafsa "
+//    println(student)
 }
